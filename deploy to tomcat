@@ -6,8 +6,8 @@ node{
    def copyWar = "scp -o StrictHostKeyChecking=no target/myweb.war ${tomcatUser}@${tomcatIp}:/opt/tomcat8/webapps/"
    stage('SCM Checkout'){
         git branch: 'master', 
-	        credentialsId: 'javahometech',
-	        url: 'https://github.com/javahometech/myweb'
+	        credentialsId: 'pragathiteja',
+	        url: 'https://github.com/pragathiteja/my-app'
    }
    stage('Maven Build'){
         def mvnHome = tool name: 'maven3', type: 'maven'
