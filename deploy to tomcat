@@ -7,7 +7,7 @@ node{
    stage('SCM Checkout'){
         git branch: 'master', 
 	        credentialsId: 'pragathiteja',
-	        url: 'https://github.com/pragathiteja/my-app'
+	        url: 'https://github.com/pragathiteja/myweb'
    }
    stage('Maven Build'){
         def mvnHome = tool name: 'maven3', type: 'maven'
